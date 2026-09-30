@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Bean Scene</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="auth-page">
+      <div class="auth-box">
+        <h2>Welcome back</h2>
+        <p class="auth-subtitle">Log in to order your favorite coffee.</p>
+        <label for="loginUser">Username or Email</label>
+        <input id="loginUser" placeholder="Username or Email" />
+        <label for="loginPass">Password</label>
+        <input id="loginPass" type="password" placeholder="Password" />
+        <button id="loginSubmit" class="btn">Login</button>
+        <p class="muted">
+          Don’t have an account? <a href="register.html">Register</a>
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const btn = document.getElementById("loginSubmit");
+
+        if (btn) {
+          btn.addEventListener("click", () => {
+            const userInputValue = document
+              .getElementById("loginUser")
+              .value.trim();
+            const passValue = document.getElementById("loginPass").value.trim();
+
+            if (!userInputValue || !passValue) {
+              return alert("Please fill all fields.");
+            }
+
+            loginUser({ identity: userInputValue, password: passValue });
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

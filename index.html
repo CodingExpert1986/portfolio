@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Dennis Ekanem is a freelance frontend developer building thoughtful, fast, and accessible websites."
+    />
+    <meta name="theme-color" content="#f4f3ec" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="portfolio.css" />
+    <title>Dennis Ekanem | Freelance Frontend Developer</title>
+  </head>
+  <body class="portfolio-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="wordmark" href="#home" aria-label="Dennis Ekanem, home">
+        <span class="wordmark-icon" aria-hidden="true">d.</span>
+        <span>Dennis Ekanem</span>
+      </a>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+        aria-label="Open navigation"
+      >
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a class="nav-contact" href="#contact"
+          >Let's talk <span aria-hidden="true">↗</span></a
+        >
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero page-wrap" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="availability-dot"></span> Freelance developer ·
+            Available for select projects
+          </p>
+          <h1 id="hero-title">
+            I make the web feel <span class="highlight-word">thoughtful.</span>
+          </h1>
+          <p class="hero-intro">
+            Hey, I'm Dennis. I design and build polished, accessible websites
+            for people with good ideas and ambitious plans.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#work"
+              >Explore my work <span aria-hidden="true">↓</span></a
+            >
+            <a class="text-link" href="#contact"
+              >Have a project in mind? <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div class="hero-meta">
+            <span>Based in Portland, OR</span>
+            <span class="meta-rule" aria-hidden="true"></span>
+            <span>Working worldwide</span>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="A preview of Dennis's frontend work">
+          <div class="art-topline">
+            <span>INDEPENDENT BY DESIGN</span><span>2025 — 2026</span>
+          </div>
+          <div class="art-window">
+            <div class="window-bar">
+              <span></span><span></span><span></span>
+              <p>made-for-the-web.studio</p>
+            </div>
+            <div class="window-content">
+              <div class="window-nav">
+                <span class="window-brand">FIELDNOTES</span
+                ><span>MENU&nbsp;&nbsp; +</span>
+              </div>
+              <div class="window-kicker">A SMALL STUDIO FOR BIG IDEAS</div>
+              <div class="window-title">Make room<br />for <i>better.</i></div>
+              <div class="window-bottom">
+                <span>Strategy, design<br />&amp; a little wonder.</span
+                ><span class="window-arrow" aria-hidden="true">↗</span>
+              </div>
+              <div class="window-sun" aria-hidden="true"></div>
+            </div>
+          </div>
+          <div class="art-caption">
+            <span>DESIGN THAT HAS A POINT OF VIEW</span><span>01 / 03</span>
+          </div>
+          <span class="art-sticker" aria-hidden="true"
+            >GOOD<br />THINGS<br />LIVE HERE</span
+          >
+        </div>
+        <a class="scroll-cue" href="#work"
+          ><span class="scroll-line" aria-hidden="true"></span> SCROLL TO
+          EXPLORE</a
+        >
+      </section>
+
+      <section
+        class="work-section section-pad"
+        id="work"
+        aria-labelledby="work-title"
+      >
+        <div class="page-wrap">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">A few things I've made</p>
+              <h2 id="work-title">
+                Selected work<span class="heading-period">.</span>
+              </h2>
+            </div>
+            <p class="section-note">
+              A mix of client builds and<br />carefully considered experiments.
+            </p>
+          </div>
+          <div class="project-toolbar">
+            <span class="project-count">03 PROJECTS</span>
+            <div
+              class="project-filters"
+              role="group"
+              aria-label="Filter projects"
+            >
+              <button
+                class="filter-button is-active"
+                type="button"
+                data-filter="all"
+                aria-pressed="true"
+              >
+                All work <span>03</span>
+              </button>
+              <button
+                class="filter-button"
+                type="button"
+                data-filter="websites"
+                aria-pressed="false"
+              >
+                Websites <span>02</span>
+              </button>
+              <button
+                class="filter-button"
+                type="button"
+                data-filter="commerce"
+                aria-pressed="false"
+              >
+                Commerce <span>01</span>
+              </button>
+            </div>
+          </div>
+          <div class="project-grid">
+            <article
+              class="project-card project-card-featured"
+              data-category="websites"
+            >
+              <button
+                class="project-preview preview-coffee"
+                type="button"
+                data-project="bean-scene"
+                aria-label="Read the Bean Scene project details"
+              >
+                <span class="preview-browser"
+                  ><span class="preview-browser-dots">● ● ●</span
+                  ><span>beanscene.coffee</span
+                  ><span>MENU&nbsp; &nbsp; ABOUT</span></span
+                >
+                <span class="coffee-preview-copy"
+                  ><span>YOUR DAILY<br />RITUAL, <i>REIMAGINED.</i></span
+                  ><span class="coffee-preview-button"
+                    >FIND YOUR CUP&nbsp; ↗</span
+                  ></span
+                >
+                <img
+                  src="images/icon/stylized-cup-coffee-out-coffee-beans-flat-lay 1.png"
+                  alt="Coffee cup surrounded by coffee beans"
+                  loading="lazy"
+                />
+                <span class="preview-open" aria-hidden="true">↗</span>
+              </button>
+              <div class="project-info">
+                <div>
+                  <p class="project-type">01 / BRAND WEBSITE</p>
+                  <h3>Bean Scene</h3>
+                </div>
+                <button
+                  class="project-details"
+                  type="button"
+                  data-project="bean-scene"
+                >
+                  Project details <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+              <p class="project-summary">
+                A warm, responsive digital home for an independent neighborhood
+                coffee shop.
+              </p>
+              <div class="tag-list">
+                <span>Responsive design</span><span>HTML &amp; CSS</span
+                ><span>JavaScript</span>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="commerce">
+              <button
+                class="project-preview preview-store"
+                type="button"
+                data-project="goodform"
+                aria-label="Read the Goodform project details"
+              >
+                <span class="store-topline"
+                  >GOODFORM <span>OBJECTS FOR EVERYDAY</span
+                  ><span>BAG (0)</span></span
+                >
+                <span class="store-title"
+                  >Keep the<br /><i>good stuff.</i></span
+                >
+                <span class="store-shape shape-one"></span
+                ><span class="store-shape shape-two"></span
+                ><span class="store-shape shape-three"></span>
+                <span class="store-bottom"
+                  >DESIGNED TO BE KEPT <span>SHOP THE EDIT&nbsp; ↗</span></span
+                >
+                <span class="preview-open" aria-hidden="true">↗</span>
+              </button>
+              <div class="project-info">
+                <div>
+                  <p class="project-type">02 / ONLINE STORE</p>
+                  <h3>Goodform Goods</h3>
+                </div>
+                <button
+                  class="project-details"
+                  type="button"
+                  data-project="goodform"
+                >
+                  Project details <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+              <p class="project-summary">
+                A considered storefront for useful, well-made objects and the
+                people who make them.
+              </p>
+              <div class="tag-list">
+                <span>Shopify</span><span>Commerce</span
+                ><span>Accessibility</span>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="websites">
+              <button
+                class="project-preview preview-studio"
+                type="button"
+                data-project="northline"
+                aria-label="Read the Northline project details"
+              >
+                <span class="studio-topline"
+                  ><span>NORTHLINE®</span><span>ARCHITECTURE &amp; PLACE</span
+                  ><span>MENU&nbsp; +</span></span
+                >
+                <span class="studio-image" aria-hidden="true"></span>
+                <span class="studio-overlay"
+                  ><span>BUILT TO<br />BELONG.</span
+                  ><span>STORIES IN SPACE<br />PORTLAND · EST. 2018</span></span
+                >
+                <span class="preview-open" aria-hidden="true">↗</span>
+              </button>
+              <div class="project-info">
+                <div>
+                  <p class="project-type">03 / STUDIO WEBSITE</p>
+                  <h3>Northline Studio</h3>
+                </div>
+                <button
+                  class="project-details"
+                  type="button"
+                  data-project="northline"
+                >
+                  Project details <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+              <p class="project-summary">
+                A confident portfolio site that lets the studio's architecture
+                take center stage.
+              </p>
+              <div class="tag-list">
+                <span>Art direction</span><span>Performance</span
+                ><span>CSS</span>
+              </div>
+            </article>
+          </div>
+          <p class="work-footnote">
+            Project concepts shown for portfolio demonstration.
+            <a href="#contact"
+              >Let's make your real one <span aria-hidden="true">↗</span></a
+            >
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="about-section section-pad"
+        id="about"
+        aria-labelledby="about-title"
+      >
+        <div class="page-wrap about-grid">
+          <div class="about-stamp" aria-hidden="true">
+            <span>GOOD DESIGN<br />IS GOOD<br />MANNERS.</span
+            ><span class="stamp-star">✳</span>
+          </div>
+          <div class="about-copy">
+            <p class="eyebrow">The person behind the pixels</p>
+            <h2 id="about-title">
+              A thoughtful partner, from first sketch to final
+              <span>semicolon.</span>
+            </h2>
+            <p>
+              I work with founders, small teams, and independent studios to
+              bring their ideas to life on the web. The sweet spot: thoughtful
+              design, clean frontend code, and the details that make a site feel
+              unmistakably yours.
+            </p>
+            <p>
+              You'll get clear communication, a collaborative process, and work
+              built to feel just as good on a phone as it does on a big screen.
+            </p>
+            <a class="text-link about-link" href="#contact"
+              >A little more about working together
+              <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div class="about-stats">
+            <div>
+              <strong>05<span>+</span></strong
+              ><span>YEARS BUILDING FOR THE WEB</span>
+            </div>
+            <div><strong>24</strong><span>PROJECTS BROUGHT TO LIFE</span></div>
+            <div>
+              <strong>100<span>%</span></strong
+              ><span>INDEPENDENT &amp; HANDS-ON</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="services-section section-pad"
+        id="services"
+        aria-labelledby="services-title"
+      >
+        <div class="page-wrap">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">How I can help</p>
+              <h2 id="services-title">
+                Good work, made together<span class="heading-period">.</span>
+              </h2>
+            </div>
+            <p class="section-note">
+              From a first conversation to<br />the very last responsive detail.
+            </p>
+          </div>
+          <div class="services-list">
+            <article>
+              <span class="service-number">01</span>
+              <div>
+                <h3>Frontend development</h3>
+                <p>
+                  Responsive, accessible websites built with care and made to
+                  last.
+                </p>
+              </div>
+              <span class="service-tools">HTML · CSS · JAVASCRIPT</span>
+            </article>
+            <article>
+              <span class="service-number">02</span>
+              <div>
+                <h3>Design to development</h3>
+                <p>
+                  Figma designs translated into crisp, considered,
+                  production-ready pages.
+                </p>
+              </div>
+              <span class="service-tools">FIGMA · PIXEL DETAIL</span>
+            </article>
+            <article>
+              <span class="service-number">03</span>
+              <div>
+                <h3>Shopify &amp; small business</h3>
+                <p>
+                  Easy-to-manage storefronts and brand sites built around your
+                  goals.
+                </p>
+              </div>
+              <span class="service-tools">SHOPIFY · CMS</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="contact-section"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <div class="page-wrap contact-grid">
+          <div class="contact-copy">
+            <p class="eyebrow">Have a good one in mind?</p>
+            <h2 id="contact-title">Let's make<br />something <i>matter.</i></h2>
+            <p>
+              Tell me what you're dreaming up. I'll get back to you within two
+              working days.
+            </p>
+            <a class="contact-email" href="mailto:hello@example.com"
+              >hello@example.com <span aria-hidden="true">↗</span></a
+            >
+            <div class="contact-socials">
+              <a href="https://www.upwork.com/" target="_blank" rel="noreferrer"
+                >Upwork <span aria-hidden="true">↗</span></a
+              ><a href="https://github.com/" target="_blank" rel="noreferrer"
+                >GitHub <span aria-hidden="true">↗</span></a
+              ><a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noreferrer"
+                >LinkedIn <span aria-hidden="true">↗</span></a
+              >
+            </div>
+          </div>
+          <form class="contact-form" id="contact-form">
+            <label for="contact-name">Your name</label
+            ><input
+              id="contact-name"
+              name="name"
+              type="text"
+              placeholder="Jamie Smith"
+              autocomplete="name"
+              required
+            />
+            <label for="contact-address">Email address</label
+            ><input
+              id="contact-address"
+              name="email"
+              type="email"
+              placeholder="jamie@yourstudio.com"
+              autocomplete="email"
+              required
+            />
+            <label for="contact-message">A little about your project</label
+            ><textarea
+              id="contact-message"
+              name="message"
+              rows="4"
+              placeholder="What are you hoping to make?"
+              required
+            ></textarea>
+            <button class="button button-lime" type="submit">
+              Start a conversation <span aria-hidden="true">↗</span>
+            </button>
+            <p class="form-note" id="form-note" aria-live="polite">
+              This demo opens a new email draft when you send.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="wordmark footer-wordmark" href="#home"
+        ><span class="wordmark-icon" aria-hidden="true">d.</span
+        ><span>Dennis Ekanem</span></a
+      ><span>INDEPENDENTLY MADE WITH CARE.</span
+      ><a href="#home">BACK TO TOP ↑</a
+      ><span>© <span id="current-year">2026</span> DENNIS EKANEM</span>
+    </footer>
+
+    <dialog
+      class="project-dialog"
+      id="project-dialog"
+      aria-labelledby="dialog-title"
+    >
+      <form method="dialog">
+        <button class="dialog-close" aria-label="Close project details">
+          ×
+        </button>
+      </form>
+      <p class="eyebrow" id="dialog-kicker">PROJECT DETAILS</p>
+      <h2 id="dialog-title"></h2>
+      <p id="dialog-description"></p>
+      <div class="dialog-tags" id="dialog-tags"></div>
+      <a class="button button-dark dialog-contact" href="#contact"
+        >Have a project like this? <span aria-hidden="true">↗</span></a
+      >
+    </dialog>
+    <script src="script.js" defer></script>
+  </body>
+</html>
