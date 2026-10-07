@@ -3,10 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="D-hubtech | Frontend Developer" />
+    <meta
+      property="og:description"
+      content="I design and build polished, responsive websites for businesses and people with good ideas."
+    />
+    <meta property="og:image" content="images/icon/og-image.png" />
     <meta
       name="description"
       content="Dennis Ekanem is a freelance frontend developer building thoughtful, fast, and accessible websites."
     />
+    <link rel="canonical" href="https://d-hubtech.netlify.app/" />
     <meta name="theme-color" content="#f4f3ec" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,7 +24,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="portfolio.css" />
-    <title>Dennis Ekanem | Freelance Frontend Developer</title>
+    <title>D-hubtech | Frontend Developer</title>
   </head>
   <body class="portfolio-page">
     <a class="skip-link" href="#main">Skip to content</a>
@@ -66,7 +75,7 @@
             >
           </div>
           <div class="hero-meta">
-            <span>Based in Portland, OR</span>
+            <span>Based in Lagos, Nigeria</span>
             <span class="meta-rule" aria-hidden="true"></span>
             <span>Working worldwide</span>
           </div>
@@ -121,7 +130,8 @@
               </h2>
             </div>
             <p class="section-note">
-              A mix of client builds and<br />carefully considered experiments.
+              A collection of websites I've designed and built<br />to solve
+              real-world business needs.
             </p>
           </div>
           <div class="project-toolbar">
@@ -145,15 +155,7 @@
                 data-filter="websites"
                 aria-pressed="false"
               >
-                Websites <span>02</span>
-              </button>
-              <button
-                class="filter-button"
-                type="button"
-                data-filter="commerce"
-                aria-pressed="false"
-              >
-                Commerce <span>01</span>
+                Websites <span>03</span>
               </button>
             </div>
           </div>
@@ -203,54 +205,80 @@
                 A warm, responsive digital home for an independent neighborhood
                 coffee shop.
               </p>
+              <a
+                class="project-live-link"
+                href="https://coffee-home01.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View live project ↗
+              </a>
+
               <div class="tag-list">
                 <span>Responsive design</span><span>HTML &amp; CSS</span
                 ><span>JavaScript</span>
               </div>
             </article>
 
-            <article class="project-card" data-category="commerce">
+            <article class="project-card" data-category="websites">
               <button
                 class="project-preview preview-store"
                 type="button"
-                data-project="goodform"
-                aria-label="Read the Goodform project details"
+                data-project="xtra-logistic"
+                aria-label="Read the Xtra Logistic project details"
               >
-                <span class="store-topline"
-                  >GOODFORM <span>OBJECTS FOR EVERYDAY</span
-                  ><span>BAG (0)</span></span
-                >
-                <span class="store-title"
-                  >Keep the<br /><i>good stuff.</i></span
-                >
-                <span class="store-shape shape-one"></span
-                ><span class="store-shape shape-two"></span
-                ><span class="store-shape shape-three"></span>
-                <span class="store-bottom"
-                  >DESIGNED TO BE KEPT <span>SHOP THE EDIT&nbsp; ↗</span></span
-                >
+                <span class="store-topline">
+                  XTRA LOGISTIC
+                  <span>LOGISTICS &amp; TRANSPORT</span>
+                  <span>TRACKING</span>
+                </span>
+
+                <span class="store-title">
+                  Moving<br /><i>things forward.</i>
+                </span>
+                <span class="store-shape shape-one"></span>
+                <span class="store-shape shape-two"></span>
+                <span class="store-shape shape-three"></span>
+
+                <span class="store-bottom">
+                  LOGISTICS SOLUTIONS
+                  <span>VIEW PROJECT&nbsp; ↗</span>
+                </span>
+
                 <span class="preview-open" aria-hidden="true">↗</span>
               </button>
               <div class="project-info">
                 <div>
-                  <p class="project-type">02 / ONLINE STORE</p>
-                  <h3>Goodform Goods</h3>
+                  <p class="project-type">02 / LOGISTICS WEBSITE</p>
+                  <h3>Xtra Logistic</h3>
                 </div>
                 <button
                   class="project-details"
                   type="button"
-                  data-project="goodform"
+                  data-project="xtra-logistic"
                 >
                   Project details <span aria-hidden="true">↗</span>
                 </button>
               </div>
+
               <p class="project-summary">
-                A considered storefront for useful, well-made objects and the
-                people who make them.
+                A responsive logistics platform with shipment tracking, service
+                information, contact features, and an administrative dashboard.
               </p>
+
+              <a
+                class="project-live-link"
+                href="https://xtra-logistic.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View live project ↗
+              </a>
+
               <div class="tag-list">
-                <span>Shopify</span><span>Commerce</span
-                ><span>Accessibility</span>
+                <span>React</span>
+                <span>Supabase</span>
+                <span>Responsive Design</span>
               </div>
             </article>
 
@@ -258,40 +286,63 @@
               <button
                 class="project-preview preview-studio"
                 type="button"
-                data-project="northline"
-                aria-label="Read the Northline project details"
+                data-project="stonewise"
+                aria-label="Read the Stonewise Construction project details"
               >
-                <span class="studio-topline"
-                  ><span>NORTHLINE®</span><span>ARCHITECTURE &amp; PLACE</span
-                  ><span>MENU&nbsp; +</span></span
-                >
+                <span class="studio-topline">
+                  <span>STONEWISE®</span>
+                  <span>CONSTRUCTION &amp; BUILDING</span>
+                  <span>MENU&nbsp; +</span>
+                </span>
+
                 <span class="studio-image" aria-hidden="true"></span>
-                <span class="studio-overlay"
-                  ><span>BUILT TO<br />BELONG.</span
-                  ><span>STORIES IN SPACE<br />PORTLAND · EST. 2018</span></span
-                >
+
+                <span class="studio-overlay">
+                  <span>BUILT TO<br />LAST.</span>
+                  <span>
+                    CONSTRUCTION SOLUTIONS<br />
+                    LAGOS · NIGERIA
+                  </span>
+                </span>
+
                 <span class="preview-open" aria-hidden="true">↗</span>
               </button>
+
               <div class="project-info">
                 <div>
-                  <p class="project-type">03 / STUDIO WEBSITE</p>
-                  <h3>Northline Studio</h3>
+                  <p class="project-type">03 / CONSTRUCTION WEBSITE</p>
+                  <h3>Stonewise Construction</h3>
                 </div>
+
                 <button
                   class="project-details"
                   type="button"
-                  data-project="northline"
+                  data-project="stonewise"
                 >
                   Project details <span aria-hidden="true">↗</span>
                 </button>
               </div>
+
               <p class="project-summary">
-                A confident portfolio site that lets the studio's architecture
-                take center stage.
+                A responsive construction company website designed to present
+                services, company information, and contact details across
+                desktop and mobile.
               </p>
+
+              <a
+                class="project-live-link"
+                href="https://stonewisecontruction.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View live project ↗
+              </a>
+
               <div class="tag-list">
-                <span>Art direction</span><span>Performance</span
-                ><span>CSS</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Responsive Design</span>
               </div>
             </article>
           </div>
@@ -337,13 +388,16 @@
           </div>
           <div class="about-stats">
             <div>
-              <strong>05<span>+</span></strong
-              ><span>YEARS BUILDING FOR THE WEB</span>
+              <strong>03</strong>
+              <span>PROJECTS BUILT</span>
             </div>
-            <div><strong>24</strong><span>PROJECTS BROUGHT TO LIFE</span></div>
+            <strong>100<span>%</span></strong>
+            <span>HANDS-ON DEVELOPMENT</span>
             <div>
-              <strong>100<span>%</span></strong
-              ><span>INDEPENDENT &amp; HANDS-ON</span>
+              <div>
+                <strong>RESPONSIVE</strong>
+                <span>MOBILE-FIRST APPROACH</span>
+              </div>
             </div>
           </div>
         </div>
@@ -417,21 +471,9 @@
               Tell me what you're dreaming up. I'll get back to you within two
               working days.
             </p>
-            <a class="contact-email" href="mailto:hello@example.com"
-              >hello@example.com <span aria-hidden="true">↗</span></a
+            <a class="contact-email" href="mailto:codingexpert1986@gmail.com"
+              >codingexpert1986@gmail.com<span aria-hidden="true">↗</span></a
             >
-            <div class="contact-socials">
-              <a href="https://www.upwork.com/" target="_blank" rel="noreferrer"
-                >Upwork <span aria-hidden="true">↗</span></a
-              ><a href="https://github.com/" target="_blank" rel="noreferrer"
-                >GitHub <span aria-hidden="true">↗</span></a
-              ><a
-                href="https://www.linkedin.com/"
-                target="_blank"
-                rel="noreferrer"
-                >LinkedIn <span aria-hidden="true">↗</span></a
-              >
-            </div>
           </div>
           <form class="contact-form" id="contact-form">
             <label for="contact-name">Your name</label
@@ -461,10 +503,24 @@
               required
             ></textarea>
             <button class="button button-lime" type="submit">
-              Start a conversation <span aria-hidden="true">↗</span>
+              Start a conversation
+              <span
+                aria-
+                This
+                demo
+                opens
+                a
+                new
+                email
+                draft
+                when
+                you
+                send.hidden="true"
+                >↗</span
+              >
             </button>
             <p class="form-note" id="form-note" aria-live="polite">
-              This demo opens a new email draft when you send.
+              Your message will open in your email app for you to send.
             </p>
           </form>
         </div>

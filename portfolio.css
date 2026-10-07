@@ -441,6 +441,10 @@ textarea:focus-visible {
   border-color: var(--ink);
   color: var(--ink);
 }
+.filter-button.is-active {
+  background: var(--ink);
+  color: var(--paper);
+}
 .project-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
