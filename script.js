@@ -42,24 +42,24 @@ const projectDetails = {
   "bean-scene": {
     title: "Bean Scene",
     description:
-      "A coffee shop concept built around a distinctive visual identity, an easy-to-scan menu, and a friendly responsive experience. The original project pages are still available from the project folder.",
+      "A warm, responsive digital home for an independent neighborhood coffee shop, with a distinctive visual identity and an easy-to-scan menu.",
     tags: ["Brand website", "Responsive layout", "HTML & CSS", "JavaScript"],
   },
-  goodform: {
-    title: "Goodform Goods",
+  "xtra-logistic": {
+    title: "Xtra Logistic",
     description:
-      "An ecommerce concept for useful, well-made home objects. A warm product palette, clear product storytelling, and a simple path from discovery to checkout keep the shopping experience focused.",
-    tags: ["Ecommerce", "Shopify", "Product storytelling", "Accessibility"],
+      "A responsive logistics platform for shipment tracking, service information, customer inquiries, and administrative operations.",
+    tags: ["Logistics", "Shipment tracking", "Responsive design", "React"],
   },
-  northline: {
-    title: "Northline Studio",
+  stonewise: {
+    title: "Stonewise Construction",
     description:
-      "An editorial portfolio concept for a small architecture practice. Oversized type, considered imagery, and responsive layouts help the work take center stage on every screen.",
+      "A responsive construction company website presenting building services, company information, and contact details across desktop and mobile.",
     tags: [
-      "Studio website",
-      "Art direction",
+      "Construction",
+      "Service information",
       "Responsive design",
-      "Performance",
+      "Business website",
     ],
   },
 };
@@ -100,7 +100,7 @@ if (contactForm) {
     const formData = new FormData(contactForm);
     const subject = `Project inquiry from ${formData.get("name")}`;
     const body = `${formData.get("message")}\n\nFrom: ${formData.get("name")}\nEmail: ${formData.get("email")}`;
-    const recipient = "hello@example.com";
+    const recipient = "codingexpert1986@gmail.com";
     document.querySelector("#form-note").textContent =
       `Opening an email draft to ${recipient}.`;
     window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
